@@ -10,6 +10,8 @@ HTTP request trunking over tcp sockets
 ## Example usage
 The following examples expect `sockhop` to be installed (`npm install sockhop`)
 
+See [Full documentation](./API.md) for details.
+
 ### Forward
 Here is an example of a "forward" usage, where the HOSClient is also a SockhopClient.
 Spin up a server:
