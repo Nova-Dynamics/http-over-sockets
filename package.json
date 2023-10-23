@@ -1,0 +1,37 @@
+{
+  "name": "http-over-sockets",
+  "version": "1.0.0",
+  "description": "HTTP request trunking over tcp sockets",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --exit",
+    "build": "node build-tools/generate_docs.js",
+    "lint": "npx eslint index.js lib/ test/",
+    "lint:fix": "npx eslint index.js lib/ test/ --fix",
+    "host": "./scripts/server.js",
+    "host:reverse": "./scripts/reverse-server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nova-Dynamics/http-over-sockets.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "Jonathan D. B. Van Schenck",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "eslint": "^8.20.0",
+    "eslint-plugin-jsdoc": "^39.3.3",
+    "eslint-plugin-node": "^11.1.0",
+    "express": "^4.18.2",
+    "jsdoc-to-markdown": "^7.1.1",
+    "mocha": "^10.0.0",
+    "sockhop": "^1.8.4"
+  },
+  "bugs": {
+    "url": "https://github.com/Nova-Dynamics/http-over-sockets/issues"
+  },
+  "homepage": "https://github.com/Nova-Dynamics/http-over-sockets#readme"
+}
